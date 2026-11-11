@@ -8,6 +8,8 @@ import {
 // Values
 pub fn additive(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[AdditiveResult, DeaError]
 
+pub fn benchmark_report(Dataset, Dataset, Returns, output? : Bool, refine? : Bool, budget? : Int32) -> Result[Json, DeaError]
+
 pub fn directional(Dataset, Int32, Dataset, Returns, Array[Double], Array[Double], budget? : Int32) -> Result[DirectionalResult, DeaError]
 
 pub fn evaluate(Dataset, Dataset, Returns, output? : Bool, refine? : Bool, budget? : Int32) -> Array[Result[RadialResult, DeaError]]
@@ -35,6 +37,8 @@ pub fn scale_efficiency(Dataset, Int32, budget? : Int32) -> Result[ScaleResult, 
 pub fn sensitivity(Dataset, Int32, Dataset, Returns, output? : Bool, budget? : Int32) -> Result[SensitivityResult, DeaError]
 
 pub fn strongly_efficient(Dataset, Int32, RadialResult, tolerance? : Double) -> Result[Bool, DeaError]
+
+pub fn summarize(Array[Result[RadialResult, DeaError]], output? : Bool) -> Result[ScoreSummary, DeaError]
 
 pub fn super_efficiency(Dataset, Int32, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
 
@@ -66,6 +70,8 @@ pub(all) enum DeaError {
   IterationLimit
   Numerical(String)
 } derive(@debug.Debug)
+pub fn DeaError::code(Self) -> String
+pub fn DeaError::to_json(Self) -> Json
 pub fn DeaError::to_repr(Self) -> @debug.Repr
 
 pub struct DirectionalResult {
@@ -116,6 +122,7 @@ pub struct RadialResult {
   residual : Double
   iterations : Int32
 }
+pub fn RadialResult::to_json(Self) -> Json
 
 pub(all) enum Returns {
   CRS
@@ -133,6 +140,22 @@ pub struct ScaleResult {
   crs : RadialResult
   vrs : RadialResult
 }
+
+pub struct ScoreRow {
+  unit : String
+  score : Double
+  factor : Double
+  rank : Int32
+}
+
+pub struct ScoreSummary {
+  rows : Array[ScoreRow]
+  failures : Int32
+  mean : Double?
+  minimum : Double?
+  maximum : Double?
+}
+pub fn ScoreSummary::to_json(Self) -> Json
 
 pub struct SensitivityResult {
   baseline : RadialResult
