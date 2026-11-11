@@ -8,6 +8,8 @@ import {
 // Values
 pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResult, DeaError]
 
+pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
+
 // Errors
 
 // Types and methods
@@ -44,6 +46,14 @@ pub struct RadialResult {
   residual : Double
   iterations : Int32
 }
+
+pub(all) enum Returns {
+  CRS
+  VRS
+  NIRS
+  NDRS
+} derive(@debug.Debug)
+pub fn Returns::to_repr(Self) -> @debug.Repr
 
 // Type aliases
 

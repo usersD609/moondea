@@ -127,11 +127,49 @@ fn projection(
 }
 
 ///|
-/// Input-oriented constant-returns radial efficiency. Reference can differ from evaluation.
-pub fn input_crs(
+pub(all) enum Returns {
+  CRS
+  VRS
+  NIRS
+  NDRS
+} derive(Debug)
+
+///|
+pub extend Returns with @debug.Debug::{to_repr}
+
+///|
+fn returns_constraints(
+  a : Array[Array[Double]],
+  b : Array[Double],
+  columns : Int32,
+  peers : Int32,
+  returns : Returns,
+) -> Unit {
+  let upper = match returns {
+    VRS | NIRS => true
+    _ => false
+  }
+  let lower = match returns {
+    VRS | NDRS => true
+    _ => false
+  }
+  if upper {
+    a.push(Array::makei(columns, fn(j) { if j < peers { 1.0 } else { 0.0 } }))
+    b.push(1.0)
+  }
+  if lower {
+    a.push(Array::makei(columns, fn(j) { if j < peers { -1.0 } else { 0.0 } }))
+    b.push(-1.0)
+  }
+}
+
+///|
+/// Input-oriented radial efficiency against explicit reference technology.
+pub fn input_radial(
   data : Dataset,
   unit : Int32,
   reference : Dataset,
+  returns : Returns,
   budget~ : Int32 = 10000,
 ) -> Result[RadialResult, DeaError] {
   let p = match scale_panel(data, unit, reference) {
@@ -153,6 +191,7 @@ pub fn input_crs(
     a.push(row)
     b.push(-p.y0[j])
   }
+  returns_constraints(a, b, n + 1, n, returns)
   let c = Array::make(n + 1, 0.0)
   c[n] = -1.0
   let sol = match solve_linear(a, b, c, budget) {
@@ -170,4 +209,14 @@ pub fn input_crs(
     sol.values[n],
     sol.iterations,
   )
+}
+
+///|
+pub fn input_crs(
+  data : Dataset,
+  unit : Int32,
+  reference : Dataset,
+  budget~ : Int32 = 10000,
+) -> Result[RadialResult, DeaError] {
+  input_radial(data, unit, reference, CRS, budget~)
 }
