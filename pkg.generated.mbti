@@ -16,6 +16,8 @@ pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResul
 
 pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
 
+pub fn malmquist(Dataset, Dataset, Int32, budget? : Int32) -> Result[ProductivityResult, DeaError]
+
 pub fn output_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
 
 pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
@@ -64,6 +66,17 @@ pub struct DirectionalResult {
   projected_outputs : Array[Double]
   residual : Double
   iterations : Int32
+}
+
+pub struct ProductivityResult {
+  unit : String
+  theta_00 : Double
+  theta_10 : Double
+  theta_01 : Double
+  theta_11 : Double
+  efficiency_change : Double
+  technology_change : Double
+  productivity : Double
 }
 
 pub struct RadialResult {
