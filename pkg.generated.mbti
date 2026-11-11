@@ -8,6 +8,8 @@ import {
 // Values
 pub fn additive(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[AdditiveResult, DeaError]
 
+pub fn directional(Dataset, Int32, Dataset, Returns, Array[Double], Array[Double], budget? : Int32) -> Result[DirectionalResult, DeaError]
+
 pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResult, DeaError]
 
 pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
@@ -47,6 +49,16 @@ pub(all) enum DeaError {
   Numerical(String)
 } derive(@debug.Debug)
 pub fn DeaError::to_repr(Self) -> @debug.Repr
+
+pub struct DirectionalResult {
+  unit : String
+  distance : Double
+  weights : Array[Double]
+  projected_inputs : Array[Double]
+  projected_outputs : Array[Double]
+  residual : Double
+  iterations : Int32
+}
 
 pub struct RadialResult {
   unit : String
