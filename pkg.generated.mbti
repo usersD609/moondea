@@ -12,6 +12,10 @@ pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result
 
 pub fn output_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
 
+pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
+
+pub fn strongly_efficient(Dataset, Int32, RadialResult, tolerance? : Double) -> Result[Bool, DeaError]
+
 // Errors
 
 // Types and methods
