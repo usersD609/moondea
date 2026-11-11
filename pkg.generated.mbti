@@ -6,6 +6,8 @@ import {
 }
 
 // Values
+pub fn additive(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[AdditiveResult, DeaError]
+
 pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResult, DeaError]
 
 pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
@@ -19,6 +21,12 @@ pub fn strongly_efficient(Dataset, Int32, RadialResult, tolerance? : Double) -> 
 // Errors
 
 // Types and methods
+pub struct AdditiveResult {
+  unit : String
+  normalized_gain : Double
+  target : RadialResult
+}
+
 pub struct Dataset {
   // private fields
 }
