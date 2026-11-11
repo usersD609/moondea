@@ -1,0 +1,4521 @@
+{
+  "seed": 6092026,
+  "cases": [
+    {
+      "case": 0,
+      "unit": 0,
+      "inputs": [
+        [
+          2.0
+        ],
+        [
+          6.0
+        ],
+        [
+          15.0
+        ],
+        [
+          1.0
+        ],
+        [
+          8.0
+        ]
+      ],
+      "outputs": [
+        [
+          3.0
+        ],
+        [
+          1.0
+        ],
+        [
+          4.0
+        ],
+        [
+          2.0
+        ],
+        [
+          8.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.75
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.3333333333333333
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.33333333333333326
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.14285714285714285
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.75
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.3333333333333333
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.33333333333333326
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.14285714285714285
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "unit": 1,
+      "inputs": [
+        [
+          12.0,
+          4.0
+        ],
+        [
+          13.0,
+          8.0
+        ],
+        [
+          3.0,
+          12.0
+        ],
+        [
+          12.0,
+          6.0
+        ],
+        [
+          10.0,
+          2.0
+        ],
+        [
+          4.0,
+          7.0
+        ]
+      ],
+      "outputs": [
+        [
+          13.0
+        ],
+        [
+          14.0
+        ],
+        [
+          6.0
+        ],
+        [
+          3.0
+        ],
+        [
+          13.0
+        ],
+        [
+          11.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.6377663482733285
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.5679723502304148
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.9023668639053255
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.22117541498429788
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": -2.886579864025407e-15
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.6377663482733285
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.5679723502304148
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.9023668639053255
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.22117541498429782
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "unit": 2,
+      "inputs": [
+        [
+          9.0,
+          2.0,
+          4.0
+        ],
+        [
+          16.0,
+          5.0,
+          4.0
+        ],
+        [
+          6.0,
+          4.0,
+          8.0
+        ],
+        [
+          13.0,
+          13.0,
+          15.0
+        ],
+        [
+          3.0,
+          8.0,
+          12.0
+        ],
+        [
+          11.0,
+          13.0,
+          7.0
+        ],
+        [
+          10.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "outputs": [
+        [
+          6.0
+        ],
+        [
+          10.0
+        ],
+        [
+          6.0
+        ],
+        [
+          7.0
+        ],
+        [
+          10.0
+        ],
+        [
+          11.0
+        ],
+        [
+          16.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.5186915887850468
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.927927927927928
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 2.2249999999999996
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.31692307692307675
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.5186915887850467
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.927927927927928
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 2.2249999999999996
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.31692307692307675
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 6.661338147750939e-16
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "unit": 3,
+      "inputs": [
+        [
+          1.0
+        ],
+        [
+          13.0
+        ],
+        [
+          14.0
+        ],
+        [
+          13.0
+        ],
+        [
+          5.0
+        ],
+        [
+          14.0
+        ],
+        [
+          11.0
+        ],
+        [
+          5.0
+        ]
+      ],
+      "outputs": [
+        [
+          4.0,
+          13.0
+        ],
+        [
+          3.0,
+          8.0
+        ],
+        [
+          13.0,
+          8.0
+        ],
+        [
+          1.0,
+          14.0
+        ],
+        [
+          8.0,
+          7.0
+        ],
+        [
+          8.0,
+          16.0
+        ],
+        [
+          5.0,
+          2.0
+        ],
+        [
+          2.0,
+          7.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.08284023668639054
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 12.071428571428571
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 62.07142857142857
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.8469945355191257
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.4102564102564103
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.1263736263736266
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 7.798076923076923
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.1040723981900453
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.4102564102564103
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.1263736263736266
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 7.798076923076927
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.10407239819004535
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.08284023668639054
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 12.071428571428557
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 62.071428571428584
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.8469945355191257
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "unit": 4,
+      "inputs": [
+        [
+          9.0,
+          9.0
+        ],
+        [
+          15.0,
+          3.0
+        ],
+        [
+          10.0,
+          8.0
+        ],
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          9.0
+        ]
+      ],
+      "outputs": [
+        [
+          9.0,
+          14.0
+        ],
+        [
+          11.0,
+          9.0
+        ],
+        [
+          13.0,
+          12.0
+        ],
+        [
+          9.0,
+          4.0
+        ],
+        [
+          14.0,
+          13.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.9999999999999998
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.9999999999999998
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.9999999999999998
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "unit": 5,
+      "inputs": [
+        [
+          8.0,
+          15.0,
+          16.0
+        ],
+        [
+          16.0,
+          12.0,
+          5.0
+        ],
+        [
+          8.0,
+          4.0,
+          1.0
+        ],
+        [
+          2.0,
+          1.0,
+          1.0
+        ],
+        [
+          7.0,
+          14.0,
+          12.0
+        ],
+        [
+          14.0,
+          9.0,
+          7.0
+        ]
+      ],
+      "outputs": [
+        [
+          7.0,
+          16.0
+        ],
+        [
+          14.0,
+          12.0
+        ],
+        [
+          9.0,
+          5.0
+        ],
+        [
+          1.0,
+          10.0
+        ],
+        [
+          5.0,
+          5.0
+        ],
+        [
+          12.0,
+          8.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.7731092436974789
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.2934782608695654
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 4.02579365079365
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.12796208530805683
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.9777777777777779
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0104166666666667
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.7722222222222221
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.007092198581560331
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.9777777777777776
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0104166666666667
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.7722222222222221
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.007092198581560349
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.7731092436974789
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.2934782608695654
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 4.02579365079365
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.12796208530805686
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "unit": 6,
+      "inputs": [
+        [
+          6.0
+        ],
+        [
+          11.0
+        ],
+        [
+          10.0
+        ],
+        [
+          10.0
+        ],
+        [
+          10.0
+        ],
+        [
+          4.0
+        ],
+        [
+          6.0
+        ]
+      ],
+      "outputs": [
+        [
+          3.0,
+          16.0,
+          1.0
+        ],
+        [
+          14.0,
+          13.0,
+          3.0
+        ],
+        [
+          1.0,
+          9.0,
+          7.0
+        ],
+        [
+          10.0,
+          9.0,
+          2.0
+        ],
+        [
+          16.0,
+          9.0,
+          2.0
+        ],
+        [
+          9.0,
+          14.0,
+          4.0
+        ],
+        [
+          7.0,
+          12.0,
+          7.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 0.9999999999999998
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 3.1086244689504383e-15
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0000000000000004
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": -3.552713678800501e-15
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "unit": 7,
+      "inputs": [
+        [
+          9.0,
+          11.0
+        ],
+        [
+          5.0,
+          12.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          7.0,
+          6.0
+        ],
+        [
+          4.0,
+          13.0
+        ],
+        [
+          16.0,
+          16.0
+        ],
+        [
+          2.0,
+          1.0
+        ],
+        [
+          4.0,
+          6.0
+        ]
+      ],
+      "outputs": [
+        [
+          10.0,
+          7.0,
+          6.0
+        ],
+        [
+          1.0,
+          2.0,
+          9.0
+        ],
+        [
+          6.0,
+          9.0,
+          8.0
+        ],
+        [
+          3.0,
+          8.0,
+          7.0
+        ],
+        [
+          6.0,
+          13.0,
+          16.0
+        ],
+        [
+          9.0,
+          7.0,
+          8.0
+        ],
+        [
+          15.0,
+          7.0,
+          5.0
+        ],
+        [
+          15.0,
+          12.0,
+          2.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.8571428571428573
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.1666666666666667
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 5.833333333333336
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.0769230769230768
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": -8.881784197001252e-16
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.8571428571428573
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.1666666666666667
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 5.833333333333336
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.0769230769230768
+        }
+      ]
+    },
+    {
+      "case": 8,
+      "unit": 3,
+      "inputs": [
+        [
+          6.0,
+          2.0,
+          6.0
+        ],
+        [
+          3.0,
+          15.0,
+          11.0
+        ],
+        [
+          15.0,
+          9.0,
+          3.0
+        ],
+        [
+          16.0,
+          6.0,
+          11.0
+        ],
+        [
+          9.0,
+          14.0,
+          16.0
+        ]
+      ],
+      "outputs": [
+        [
+          1.0,
+          8.0,
+          9.0
+        ],
+        [
+          10.0,
+          1.0,
+          10.0
+        ],
+        [
+          11.0,
+          15.0,
+          7.0
+        ],
+        [
+          3.0,
+          10.0,
+          3.0
+        ],
+        [
+          7.0,
+          10.0,
+          10.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.5844748858447489
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.7109375
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 6.25625
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.2622478386167147
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.6666666666666666
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.2
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 3.9711038961038962
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.12500000000000014
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.6666666666666666
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.2000000000000002
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 3.9711038961038954
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.12499999999999992
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.5844748858447488
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.7109375000000002
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 6.25625
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.2622478386167147
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "unit": 3,
+      "inputs": [
+        [
+          5.0
+        ],
+        [
+          15.0
+        ],
+        [
+          3.0
+        ],
+        [
+          12.0
+        ],
+        [
+          13.0
+        ],
+        [
+          13.0
+        ]
+      ],
+      "outputs": [
+        [
+          10.0
+        ],
+        [
+          12.0
+        ],
+        [
+          10.0
+        ],
+        [
+          7.0
+        ],
+        [
+          1.0
+        ],
+        [
+          10.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.17500000000000004
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 5.714285714285714
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 4.7142857142857135
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.7021276595744682
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.25
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.6428571428571428
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 1.1785714285714288
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.5
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.17500000000000004
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.6428571428571428
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 1.1785714285714288
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.5
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.25
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 5.714285714285714
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 4.7142857142857135
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.7021276595744681
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "unit": 3,
+      "inputs": [
+        [
+          11.0,
+          13.0
+        ],
+        [
+          2.0,
+          16.0
+        ],
+        [
+          5.0,
+          13.0
+        ],
+        [
+          12.0,
+          2.0
+        ],
+        [
+          14.0,
+          15.0
+        ],
+        [
+          11.0,
+          11.0
+        ],
+        [
+          16.0,
+          8.0
+        ]
+      ],
+      "outputs": [
+        [
+          16.0
+        ],
+        [
+          16.0
+        ],
+        [
+          7.0
+        ],
+        [
+          14.0
+        ],
+        [
+          15.0
+        ],
+        [
+          2.0
+        ],
+        [
+          15.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "unit": 3,
+      "inputs": [
+        [
+          11.0,
+          6.0,
+          10.0
+        ],
+        [
+          12.0,
+          13.0,
+          9.0
+        ],
+        [
+          13.0,
+          2.0,
+          7.0
+        ],
+        [
+          6.0,
+          16.0,
+          5.0
+        ],
+        [
+          15.0,
+          4.0,
+          6.0
+        ],
+        [
+          13.0,
+          11.0,
+          1.0
+        ],
+        [
+          1.0,
+          10.0,
+          2.0
+        ],
+        [
+          4.0,
+          15.0,
+          15.0
+        ]
+      ],
+      "outputs": [
+        [
+          13.0
+        ],
+        [
+          15.0
+        ],
+        [
+          8.0
+        ],
+        [
+          13.0
+        ],
+        [
+          11.0
+        ],
+        [
+          13.0
+        ],
+        [
+          11.0
+        ],
+        [
+          7.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.6610169491525423
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.5128205128205119
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 1.5916666666666668
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.20408163265306128
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.9999999999999963
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": -1.3322676295501878e-15
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.6610169491525422
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.5128205128205119
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 1.5916666666666668
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.20408163265306117
+        }
+      ]
+    },
+    {
+      "case": 12,
+      "unit": 2,
+      "inputs": [
+        [
+          8.0
+        ],
+        [
+          4.0
+        ],
+        [
+          7.0
+        ],
+        [
+          9.0
+        ],
+        [
+          14.0
+        ]
+      ],
+      "outputs": [
+        [
+          12.0,
+          7.0
+        ],
+        [
+          6.0,
+          5.0
+        ],
+        [
+          7.0,
+          16.0
+        ],
+        [
+          5.0,
+          8.0
+        ],
+        [
+          4.0,
+          9.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": -2.220446049250313e-16
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": -2.220446049250313e-16
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 13,
+      "unit": 1,
+      "inputs": [
+        [
+          1.0,
+          2.0
+        ],
+        [
+          11.0,
+          11.0
+        ],
+        [
+          8.0,
+          7.0
+        ],
+        [
+          8.0,
+          9.0
+        ],
+        [
+          12.0,
+          12.0
+        ],
+        [
+          6.0,
+          6.0
+        ]
+      ],
+      "outputs": [
+        [
+          4.0,
+          9.0
+        ],
+        [
+          7.0,
+          3.0
+        ],
+        [
+          10.0,
+          13.0
+        ],
+        [
+          2.0,
+          15.0
+        ],
+        [
+          16.0,
+          6.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.3181818181818182
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 3.142857142857143
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 18.142857142857142
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.5172413793103448
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.4090909090909091
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 2.1142857142857143
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 4.398268398268398
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.38613861386138626
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.4090909090909091
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 2.1142857142857148
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 4.398268398268399
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.3861386138613861
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.3181818181818182
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 3.142857142857143
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 18.142857142857142
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.5172413793103448
+        }
+      ]
+    },
+    {
+      "case": 14,
+      "unit": 0,
+      "inputs": [
+        [
+          1.0,
+          9.0,
+          2.0
+        ],
+        [
+          6.0,
+          12.0,
+          12.0
+        ],
+        [
+          10.0,
+          11.0,
+          7.0
+        ],
+        [
+          14.0,
+          15.0,
+          5.0
+        ],
+        [
+          7.0,
+          10.0,
+          5.0
+        ],
+        [
+          3.0,
+          2.0,
+          12.0
+        ],
+        [
+          3.0,
+          8.0,
+          10.0
+        ]
+      ],
+      "outputs": [
+        [
+          15.0,
+          4.0
+        ],
+        [
+          3.0,
+          10.0
+        ],
+        [
+          7.0,
+          14.0
+        ],
+        [
+          16.0,
+          3.0
+        ],
+        [
+          4.0,
+          6.0
+        ],
+        [
+          12.0,
+          8.0
+        ],
+        [
+          13.0,
+          8.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 15,
+      "unit": 7,
+      "inputs": [
+        [
+          8.0
+        ],
+        [
+          1.0
+        ],
+        [
+          11.0
+        ],
+        [
+          12.0
+        ],
+        [
+          8.0
+        ],
+        [
+          5.0
+        ],
+        [
+          10.0
+        ],
+        [
+          10.0
+        ]
+      ],
+      "outputs": [
+        [
+          10.0,
+          6.0,
+          4.0
+        ],
+        [
+          16.0,
+          5.0,
+          2.0
+        ],
+        [
+          4.0,
+          7.0,
+          10.0
+        ],
+        [
+          9.0,
+          14.0,
+          6.0
+        ],
+        [
+          12.0,
+          12.0,
+          10.0
+        ],
+        [
+          12.0,
+          2.0,
+          1.0
+        ],
+        [
+          6.0,
+          6.0,
+          15.0
+        ],
+        [
+          9.0,
+          3.0,
+          13.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.65
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.538461538461538
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 32.98290598290598
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.2121212121212121
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 0.9999999999999987
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.65
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.5384615384615383
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 32.98290598290598
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.21212121212121218
+        }
+      ]
+    },
+    {
+      "case": 16,
+      "unit": 1,
+      "inputs": [
+        [
+          10.0,
+          15.0
+        ],
+        [
+          8.0,
+          4.0
+        ],
+        [
+          6.0,
+          16.0
+        ],
+        [
+          2.0,
+          8.0
+        ],
+        [
+          11.0,
+          7.0
+        ]
+      ],
+      "outputs": [
+        [
+          16.0,
+          7.0,
+          5.0
+        ],
+        [
+          12.0,
+          5.0,
+          4.0
+        ],
+        [
+          5.0,
+          16.0,
+          16.0
+        ],
+        [
+          13.0,
+          4.0,
+          3.0
+        ],
+        [
+          14.0,
+          3.0,
+          14.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0000000000000007
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 17,
+      "unit": 5,
+      "inputs": [
+        [
+          6.0,
+          8.0,
+          13.0
+        ],
+        [
+          9.0,
+          13.0,
+          9.0
+        ],
+        [
+          8.0,
+          12.0,
+          4.0
+        ],
+        [
+          9.0,
+          10.0,
+          12.0
+        ],
+        [
+          12.0,
+          16.0,
+          13.0
+        ],
+        [
+          8.0,
+          4.0,
+          11.0
+        ]
+      ],
+      "outputs": [
+        [
+          3.0,
+          16.0,
+          16.0
+        ],
+        [
+          5.0,
+          5.0,
+          13.0
+        ],
+        [
+          15.0,
+          5.0,
+          10.0
+        ],
+        [
+          7.0,
+          15.0,
+          13.0
+        ],
+        [
+          11.0,
+          9.0,
+          16.0
+        ],
+        [
+          10.0,
+          14.0,
+          1.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 18,
+      "unit": 4,
+      "inputs": [
+        [
+          10.0
+        ],
+        [
+          3.0
+        ],
+        [
+          12.0
+        ],
+        [
+          16.0
+        ],
+        [
+          9.0
+        ],
+        [
+          1.0
+        ],
+        [
+          3.0
+        ]
+      ],
+      "outputs": [
+        [
+          9.0
+        ],
+        [
+          10.0
+        ],
+        [
+          3.0
+        ],
+        [
+          12.0
+        ],
+        [
+          5.0
+        ],
+        [
+          13.0
+        ],
+        [
+          11.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.042735042735042736
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 23.4
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 22.4
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.9180327868852459
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.1111111111111111
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 2.6
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 2.488888888888889
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.8888888888888888
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.042735042735042736
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 2.6
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 2.488888888888889
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.9180327868852459
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.1111111111111111
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 23.4
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 22.4
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.8888888888888888
+        }
+      ]
+    },
+    {
+      "case": 19,
+      "unit": 3,
+      "inputs": [
+        [
+          12.0,
+          12.0
+        ],
+        [
+          13.0,
+          7.0
+        ],
+        [
+          7.0,
+          16.0
+        ],
+        [
+          3.0,
+          13.0
+        ],
+        [
+          3.0,
+          10.0
+        ],
+        [
+          3.0,
+          15.0
+        ],
+        [
+          9.0,
+          9.0
+        ],
+        [
+          10.0,
+          13.0
+        ]
+      ],
+      "outputs": [
+        [
+          15.0
+        ],
+        [
+          6.0
+        ],
+        [
+          16.0
+        ],
+        [
+          9.0
+        ],
+        [
+          8.0
+        ],
+        [
+          14.0
+        ],
+        [
+          11.0
+        ],
+        [
+          13.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.7322033898305086
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.365740740740741
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.6153846153846154
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.15459882583170254
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.288888888888889
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.288888888888889
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.7322033898305085
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.365740740740741
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.6153846153846154
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.15459882583170254
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0000000000000075
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.288888888888889
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.288888888888889
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 20,
+      "unit": 0,
+      "inputs": [
+        [
+          1.0,
+          2.0,
+          1.0
+        ],
+        [
+          10.0,
+          8.0,
+          9.0
+        ],
+        [
+          12.0,
+          16.0,
+          14.0
+        ],
+        [
+          7.0,
+          1.0,
+          5.0
+        ],
+        [
+          16.0,
+          4.0,
+          15.0
+        ]
+      ],
+      "outputs": [
+        [
+          8.0
+        ],
+        [
+          10.0
+        ],
+        [
+          4.0
+        ],
+        [
+          11.0
+        ],
+        [
+          11.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.9999999999999998
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.9999999999999998
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 21,
+      "unit": 3,
+      "inputs": [
+        [
+          16.0
+        ],
+        [
+          4.0
+        ],
+        [
+          15.0
+        ],
+        [
+          3.0
+        ],
+        [
+          9.0
+        ],
+        [
+          11.0
+        ]
+      ],
+      "outputs": [
+        [
+          13.0,
+          13.0
+        ],
+        [
+          8.0,
+          9.0
+        ],
+        [
+          9.0,
+          2.0
+        ],
+        [
+          14.0,
+          16.0
+        ],
+        [
+          15.0,
+          10.0
+        ],
+        [
+          10.0,
+          6.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 22,
+      "unit": 1,
+      "inputs": [
+        [
+          16.0,
+          16.0
+        ],
+        [
+          11.0,
+          12.0
+        ],
+        [
+          9.0,
+          1.0
+        ],
+        [
+          5.0,
+          6.0
+        ],
+        [
+          8.0,
+          9.0
+        ],
+        [
+          14.0,
+          1.0
+        ],
+        [
+          10.0,
+          6.0
+        ]
+      ],
+      "outputs": [
+        [
+          13.0,
+          15.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          11.0,
+          5.0
+        ],
+        [
+          2.0,
+          6.0
+        ],
+        [
+          10.0,
+          14.0
+        ],
+        [
+          10.0,
+          6.0
+        ],
+        [
+          9.0,
+          5.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.2911266201395812
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 3.4349315068493147
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 6.1369863013698644
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.5490347490347491
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.5257214554579673
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 2.8333333333333335
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 4.5227272727272725
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.41767955801104967
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.2911266201395813
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 2.833333333333333
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 4.5227272727272725
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.5490347490347495
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.5257214554579673
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 3.434931506849316
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 6.1369863013698644
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.4176795580110501
+        }
+      ]
+    },
+    {
+      "case": 23,
+      "unit": 7,
+      "inputs": [
+        [
+          14.0,
+          8.0,
+          1.0
+        ],
+        [
+          2.0,
+          4.0,
+          2.0
+        ],
+        [
+          5.0,
+          15.0,
+          15.0
+        ],
+        [
+          14.0,
+          9.0,
+          13.0
+        ],
+        [
+          13.0,
+          8.0,
+          9.0
+        ],
+        [
+          11.0,
+          14.0,
+          2.0
+        ],
+        [
+          5.0,
+          10.0,
+          10.0
+        ],
+        [
+          4.0,
+          4.0,
+          9.0
+        ]
+      ],
+      "outputs": [
+        [
+          7.0,
+          2.0
+        ],
+        [
+          10.0,
+          12.0
+        ],
+        [
+          8.0,
+          15.0
+        ],
+        [
+          10.0,
+          13.0
+        ],
+        [
+          1.0,
+          7.0
+        ],
+        [
+          2.0,
+          7.0
+        ],
+        [
+          10.0,
+          3.0
+        ],
+        [
+          1.0,
+          4.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.3333333333333333
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 3.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 12.277777777777779
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.5
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 3.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 12.277777777777779
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.3333333333333333
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 3.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 12.277777777777779
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.5
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 3.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 12.277777777777779
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 24,
+      "unit": 4,
+      "inputs": [
+        [
+          9.0
+        ],
+        [
+          4.0
+        ],
+        [
+          13.0
+        ],
+        [
+          9.0
+        ],
+        [
+          9.0
+        ]
+      ],
+      "outputs": [
+        [
+          8.0,
+          7.0,
+          8.0
+        ],
+        [
+          14.0,
+          12.0,
+          8.0
+        ],
+        [
+          2.0,
+          6.0,
+          5.0
+        ],
+        [
+          12.0,
+          12.0,
+          1.0
+        ],
+        [
+          1.0,
+          12.0,
+          6.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.4444444444444444
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 2.2499999999999996
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 33.75
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.3846153846153845
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.4444444444444444
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 13.888888888888886
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.4444444444444444
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 13.888888888888886
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.4444444444444444
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 2.25
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 33.75
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.3846153846153845
+        }
+      ]
+    },
+    {
+      "case": 25,
+      "unit": 1,
+      "inputs": [
+        [
+          14.0,
+          13.0
+        ],
+        [
+          8.0,
+          3.0
+        ],
+        [
+          9.0,
+          14.0
+        ],
+        [
+          3.0,
+          6.0
+        ],
+        [
+          15.0,
+          6.0
+        ],
+        [
+          12.0,
+          6.0
+        ]
+      ],
+      "outputs": [
+        [
+          13.0,
+          6.0,
+          16.0
+        ],
+        [
+          15.0,
+          11.0,
+          4.0
+        ],
+        [
+          4.0,
+          6.0,
+          11.0
+        ],
+        [
+          8.0,
+          6.0,
+          4.0
+        ],
+        [
+          8.0,
+          16.0,
+          7.0
+        ],
+        [
+          2.0,
+          13.0,
+          13.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0000000000000002
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 26,
+      "unit": 5,
+      "inputs": [
+        [
+          8.0,
+          13.0,
+          12.0
+        ],
+        [
+          7.0,
+          3.0,
+          15.0
+        ],
+        [
+          13.0,
+          2.0,
+          11.0
+        ],
+        [
+          6.0,
+          5.0,
+          2.0
+        ],
+        [
+          6.0,
+          1.0,
+          16.0
+        ],
+        [
+          7.0,
+          12.0,
+          15.0
+        ],
+        [
+          8.0,
+          4.0,
+          14.0
+        ]
+      ],
+      "outputs": [
+        [
+          2.0,
+          2.0,
+          15.0
+        ],
+        [
+          14.0,
+          2.0,
+          4.0
+        ],
+        [
+          8.0,
+          5.0,
+          15.0
+        ],
+        [
+          14.0,
+          11.0,
+          16.0
+        ],
+        [
+          2.0,
+          9.0,
+          1.0
+        ],
+        [
+          5.0,
+          11.0,
+          5.0
+        ],
+        [
+          14.0,
+          15.0,
+          14.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.8380952380952382
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.1931818181818181
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 6.525000000000002
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.08808290155440399
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.8571428571428571
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.1818181818181819
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 5.592857142857143
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.08000000000000007
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.8380952380952382
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.1931818181818181
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 5.592857142857143
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.08808290155440428
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.8571428571428574
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.1818181818181819
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 6.525000000000002
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.08000000000000002
+        }
+      ]
+    },
+    {
+      "case": 27,
+      "unit": 3,
+      "inputs": [
+        [
+          10.0
+        ],
+        [
+          3.0
+        ],
+        [
+          3.0
+        ],
+        [
+          10.0
+        ],
+        [
+          7.0
+        ],
+        [
+          4.0
+        ],
+        [
+          9.0
+        ],
+        [
+          13.0
+        ]
+      ],
+      "outputs": [
+        [
+          7.0
+        ],
+        [
+          5.0
+        ],
+        [
+          6.0
+        ],
+        [
+          5.0
+        ],
+        [
+          13.0
+        ],
+        [
+          5.0
+        ],
+        [
+          11.0
+        ],
+        [
+          13.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.25
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 4.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 3.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.6
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 0.3
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 2.6
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 1.9000000000000004
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": 0.5888888888888889
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.25
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 2.6
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 1.9000000000000004
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": 0.5888888888888889
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.3
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 4.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 2.9999999999999996
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.6
+        }
+      ]
+    },
+    {
+      "case": 28,
+      "unit": 3,
+      "inputs": [
+        [
+          11.0,
+          14.0
+        ],
+        [
+          5.0,
+          3.0
+        ],
+        [
+          15.0,
+          10.0
+        ],
+        [
+          1.0,
+          10.0
+        ],
+        [
+          12.0,
+          12.0
+        ]
+      ],
+      "outputs": [
+        [
+          10.0
+        ],
+        [
+          15.0
+        ],
+        [
+          7.0
+        ],
+        [
+          11.0
+        ],
+        [
+          5.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 29,
+      "unit": 5,
+      "inputs": [
+        [
+          7.0,
+          7.0,
+          4.0
+        ],
+        [
+          16.0,
+          7.0,
+          1.0
+        ],
+        [
+          2.0,
+          1.0,
+          7.0
+        ],
+        [
+          14.0,
+          8.0,
+          6.0
+        ],
+        [
+          7.0,
+          13.0,
+          15.0
+        ],
+        [
+          4.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "outputs": [
+        [
+          5.0
+        ],
+        [
+          14.0
+        ],
+        [
+          3.0
+        ],
+        [
+          16.0
+        ],
+        [
+          11.0
+        ],
+        [
+          4.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 0.9999999999999997
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    },
+    {
+      "case": 30,
+      "unit": 2,
+      "inputs": [
+        [
+          1.0
+        ],
+        [
+          10.0
+        ],
+        [
+          6.0
+        ],
+        [
+          13.0
+        ],
+        [
+          10.0
+        ],
+        [
+          4.0
+        ],
+        [
+          15.0
+        ]
+      ],
+      "outputs": [
+        [
+          11.0,
+          9.0
+        ],
+        [
+          14.0,
+          8.0
+        ],
+        [
+          8.0,
+          14.0
+        ],
+        [
+          5.0,
+          11.0
+        ],
+        [
+          10.0,
+          15.0
+        ],
+        [
+          8.0,
+          3.0
+        ],
+        [
+          4.0,
+          14.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.25925925925925924
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 3.8571428571428528
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": 10.107142857142856
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": 0.588235294117647
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 0.9999999999999999
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.25925925925925924
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 3.857142857142859
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 10.107142857142856
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": 0.5882352941176471
+        }
+      ]
+    },
+    {
+      "case": 31,
+      "unit": 7,
+      "inputs": [
+        [
+          3.0,
+          14.0
+        ],
+        [
+          5.0,
+          12.0
+        ],
+        [
+          15.0,
+          6.0
+        ],
+        [
+          4.0,
+          12.0
+        ],
+        [
+          9.0,
+          3.0
+        ],
+        [
+          3.0,
+          10.0
+        ],
+        [
+          12.0,
+          16.0
+        ],
+        [
+          1.0,
+          10.0
+        ]
+      ],
+      "outputs": [
+        [
+          2.0,
+          15.0
+        ],
+        [
+          13.0,
+          11.0
+        ],
+        [
+          5.0,
+          14.0
+        ],
+        [
+          9.0,
+          1.0
+        ],
+        [
+          3.0,
+          13.0
+        ],
+        [
+          11.0,
+          16.0
+        ],
+        [
+          1.0,
+          4.0
+        ],
+        [
+          4.0,
+          2.0
+        ]
+      ],
+      "expectations": [
+        {
+          "returns": "CRS",
+          "model": "input",
+          "value": 0.9999999999999466
+        },
+        {
+          "returns": "CRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "CRS",
+          "model": "additive",
+          "value": -4.6629367034256575e-15
+        },
+        {
+          "returns": "CRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "input",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "output",
+          "value": 1.0
+        },
+        {
+          "returns": "VRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "VRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NIRS",
+          "model": "input",
+          "value": 1.0000000000000204
+        },
+        {
+          "returns": "NIRS",
+          "model": "output",
+          "value": 1.0000000000000007
+        },
+        {
+          "returns": "NIRS",
+          "model": "additive",
+          "value": -4.6629367034256575e-15
+        },
+        {
+          "returns": "NIRS",
+          "model": "directional",
+          "value": -0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "input",
+          "value": 0.9999999999999999
+        },
+        {
+          "returns": "NDRS",
+          "model": "output",
+          "value": 1.0000000000000007
+        },
+        {
+          "returns": "NDRS",
+          "model": "additive",
+          "value": 0.0
+        },
+        {
+          "returns": "NDRS",
+          "model": "directional",
+          "value": -0.0
+        }
+      ]
+    }
+  ]
+}
