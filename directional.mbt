@@ -42,6 +42,21 @@ pub fn directional(
   if !nonzero {
     return Err(Invalid("zero direction"))
   }
+  // Scaled direction coefficients must remain above simplex pivot resolution.
+  for j in 0..<gx.length() {
+    if gx[j] > 0.0 && gx[j] * p.x0[j] < 1.0e-8 {
+      return Err(
+        Invalid("scaled input direction is below numerical resolution"),
+      )
+    }
+  }
+  for j in 0..<gy.length() {
+    if gy[j] > 0.0 && gy[j] * p.y0[j] < 1.0e-8 {
+      return Err(
+        Invalid("scaled output direction is below numerical resolution"),
+      )
+    }
+  }
   let n = reference.size()
   let a = []
   let b = []

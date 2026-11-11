@@ -237,6 +237,21 @@ fn solve_linear(
     Err(e) => return Err(e)
     Ok(_) => ()
   }
+  // Verify reduced costs after termination and absence of artificial basic mass.
+  for j in 0..<t.artificial_start {
+    let mut reduced = costs[j]
+    for i in 0..<t.rows.length() {
+      reduced = reduced - costs[t.basis[i]] * t.rows[i][j]
+    }
+    if !finite(reduced) || reduced > 1.0e-7 {
+      return Err(Numerical("optimal tableau reduced-cost residual"))
+    }
+  }
+  for i in 0..<t.rows.length() {
+    if t.basis[i] >= t.artificial_start && t.rhs[i].abs() > 1.0e-8 {
+      return Err(Numerical("nonzero artificial variable after optimization"))
+    }
+  }
   let values = Array::make(n, 0.0)
   for i in 0..<t.rows.length() {
     if t.basis[i] < n {
