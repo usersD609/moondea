@@ -10,6 +10,8 @@ pub fn additive(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[Add
 
 pub fn benchmark_report(Dataset, Dataset, Returns, output? : Bool, refine? : Bool, budget? : Int32) -> Result[Json, DeaError]
 
+pub fn diagnose(Dataset) -> PanelDiagnostics
+
 pub fn directional(Dataset, Int32, Dataset, Returns, Array[Double], Array[Double], budget? : Int32) -> Result[DirectionalResult, DeaError]
 
 pub fn evaluate(Dataset, Dataset, Returns, output? : Bool, refine? : Bool, budget? : Int32) -> Array[Result[RadialResult, DeaError]]
@@ -64,6 +66,7 @@ pub fn Dataset::names(Self) -> Array[String]
 pub fn Dataset::new(Array[String], Array[Array[Double]], Array[Array[Double]]) -> Result[Self, DeaError]
 pub fn Dataset::output_count(Self) -> Int32
 pub fn Dataset::outputs(Self) -> Array[Array[Double]]
+pub fn Dataset::rescale(Self, Array[Double], Array[Double]) -> Result[Self, DeaError]
 pub fn Dataset::select(Self, Array[Int32]) -> Result[Self, DeaError]
 pub fn Dataset::size(Self) -> Int32
 
@@ -93,6 +96,17 @@ pub struct InfluenceResult {
   excluded : String
   result : Result[RadialResult, DeaError]
 }
+
+pub struct PanelDiagnostics {
+  observations : Int32
+  inputs : Int32
+  outputs : Int32
+  duplicate_pairs : Array[(String, String)]
+  input_spread : Array[Double]
+  output_spread : Array[Double]
+  within_solver_range : Bool
+}
+pub fn PanelDiagnostics::to_json(Self) -> Json
 
 pub struct PanelTable {
   // private fields
