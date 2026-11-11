@@ -20,6 +20,8 @@ pub fn output_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Resul
 
 pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
 
+pub fn scale_efficiency(Dataset, Int32, budget? : Int32) -> Result[ScaleResult, DeaError]
+
 pub fn strongly_efficient(Dataset, Int32, RadialResult, tolerance? : Double) -> Result[Bool, DeaError]
 
 pub fn super_efficiency(Dataset, Int32, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
@@ -84,6 +86,15 @@ pub(all) enum Returns {
   NDRS
 } derive(@debug.Debug)
 pub fn Returns::to_repr(Self) -> @debug.Repr
+
+pub struct ScaleResult {
+  unit : String
+  crs_efficiency : Double
+  vrs_efficiency : Double
+  scale_efficiency : Double
+  crs : RadialResult
+  vrs : RadialResult
+}
 
 // Type aliases
 
