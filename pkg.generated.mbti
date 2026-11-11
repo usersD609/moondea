@@ -10,6 +10,8 @@ pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResul
 
 pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
 
+pub fn output_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
+
 // Errors
 
 // Types and methods

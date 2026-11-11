@@ -82,6 +82,7 @@ fn projection(
   weights : Array[Double],
   factor : Double,
   iterations : Int32,
+  output~ : Bool = false,
 ) -> Result[RadialResult, DeaError] {
   let px = Array::make(data.input_count(), 0.0)
   let py = Array::make(data.output_count(), 0.0)
@@ -100,12 +101,12 @@ fn projection(
   let sy = []
   let mut residual = 0.0
   for j in 0..<px.length() {
-    let slack = factor * data.xs[unit][j] - px[j]
+    let slack = (if output { 1.0 } else { factor }) * data.xs[unit][j] - px[j]
     sx.push(slack)
     residual = residual.max((-slack).max(0.0) / data.xs[unit][j])
   }
   for j in 0..<py.length() {
-    let slack = py[j] - data.ys[unit][j]
+    let slack = py[j] - (if output { factor } else { 1.0 }) * data.ys[unit][j]
     sy.push(slack)
     residual = residual.max((-slack).max(0.0) / data.ys[unit][j])
   }
@@ -219,4 +220,50 @@ pub fn input_crs(
   budget~ : Int32 = 10000,
 ) -> Result[RadialResult, DeaError] {
   input_radial(data, unit, reference, CRS, budget~)
+}
+
+///|
+/// Output-oriented expansion factor phi; reciprocal is the [0,1] self-reference score.
+pub fn output_radial(
+  data : Dataset,
+  unit : Int32,
+  reference : Dataset,
+  returns : Returns,
+  budget~ : Int32 = 10000,
+) -> Result[RadialResult, DeaError] {
+  let p = match scale_panel(data, unit, reference) {
+    Ok(v) => v
+    Err(e) => return Err(e)
+  }
+  let n = reference.size()
+  let a = []
+  let b = []
+  for j in 0..<data.input_count() {
+    let row = p.x.map(fn(x) { x[j] })
+    row.push(0.0)
+    a.push(row)
+    b.push(p.x0[j])
+  }
+  for j in 0..<data.output_count() {
+    let row = p.y.map(fn(y) { -y[j] })
+    row.push(p.y0[j])
+    a.push(row)
+    b.push(0.0)
+  }
+  returns_constraints(a, b, n + 1, n, returns)
+  let c = Array::make(n + 1, 0.0)
+  c[n] = 1.0
+  let sol = match solve_linear(a, b, c, budget) {
+    Ok(v) => v
+    Err(e) => return Err(e)
+  }
+  projection(
+    data,
+    unit,
+    reference,
+    sol.values[:n].to_owned(),
+    sol.values[n],
+    sol.iterations,
+    output=true,
+  )
 }
