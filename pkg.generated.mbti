@@ -24,6 +24,8 @@ pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? 
 
 pub fn scale_efficiency(Dataset, Int32, budget? : Int32) -> Result[ScaleResult, DeaError]
 
+pub fn sensitivity(Dataset, Int32, Dataset, Returns, output? : Bool, budget? : Int32) -> Result[SensitivityResult, DeaError]
+
 pub fn strongly_efficient(Dataset, Int32, RadialResult, tolerance? : Double) -> Result[Bool, DeaError]
 
 pub fn super_efficiency(Dataset, Int32, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
@@ -68,6 +70,11 @@ pub struct DirectionalResult {
   iterations : Int32
 }
 
+pub struct InfluenceResult {
+  excluded : String
+  result : Result[RadialResult, DeaError]
+}
+
 pub struct ProductivityResult {
   unit : String
   theta_00 : Double
@@ -107,6 +114,15 @@ pub struct ScaleResult {
   scale_efficiency : Double
   crs : RadialResult
   vrs : RadialResult
+}
+
+pub struct SensitivityResult {
+  baseline : RadialResult
+  exclusions : Array[InfluenceResult]
+  successful : Int32
+  failed : Int32
+  minimum : Double
+  maximum : Double
 }
 
 // Type aliases
