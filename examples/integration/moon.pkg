@@ -1,0 +1,5 @@
+import {
+  "usersD609/moondea" @dea,
+}
+
+pkgtype(kind: "executable")
