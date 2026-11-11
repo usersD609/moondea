@@ -20,7 +20,11 @@ pub fn malmquist(Dataset, Dataset, Int32, budget? : Int32) -> Result[Productivit
 
 pub fn output_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
 
+pub fn pool_periods(Array[Dataset], Int32, Int32) -> Result[Dataset, DeaError]
+
 pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
+
+pub fn rolling_windows(Array[Dataset], Int32, Returns, output? : Bool, budget? : Int32) -> Result[Array[WindowResult], DeaError]
 
 pub fn scale_efficiency(Dataset, Int32, budget? : Int32) -> Result[ScaleResult, DeaError]
 
@@ -123,6 +127,13 @@ pub struct SensitivityResult {
   failed : Int32
   minimum : Double
   maximum : Double
+}
+
+pub struct WindowResult {
+  start : Int32
+  end : Int32
+  reference_count : Int32
+  results : Array[Result[RadialResult, DeaError]]
 }
 
 // Type aliases
