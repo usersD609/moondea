@@ -14,7 +14,7 @@
 
 已阅读并执行安装的 osc2026-guide 的 Project Research Guide；比赛规则采用 builder 固定九月要求及本对话验收要求，未切换为八月赛事。
 
-`moon search <keyword> --limit 100`：envelopment、DataEnvelopment、CCR、BCC、DEA、frontier、efficiency、data envelopment、rainflow、fatigue、psychrometric。DEA79项、frontier15项、efficiency62项（以原始保存结果为准）；fuzzy 同字片段命中不是功能证据。rainflow 零包命中但 GitHub 找到直接替代，已淘汰。
+`moon search <keyword> --limit 100`：envelopment、DataEnvelopment、CCR、BCC、DEA、frontier、efficiency、data envelopment、rainflow、fatigue、psychrometric。DEA79项、frontier15项、efficiency58项（以原始保存结果为准）；fuzzy 同字片段命中不是功能证据。rainflow 零包命中但 GitHub 找到直接替代，已淘汰。
 
 GitHub repository/code `per_page=100`，语言 MoonBit：DataEnvelopmentAnalysis、data envelopment、DEA+efficiency、BCC+CCR、data_envelopment、radial_efficiency、dea_radial、数据包络、benchmarking+efficiency、peer_weights；精确主行为标识未命中直接实现；宽词命中 core/BioSeqs/games 等噪声。返回 incomplete_results=false 的单页结果未超过100；不把 GitHub 搜索当全网证明。psychrometric/rainflow/fatigue/linear programming/MDP/simulation 同样调查，后两方向有直接现成实现，不进入开发。
 
@@ -40,3 +40,7 @@ GitHub repository/code `per_page=100`，语言 MoonBit：DataEnvelopmentAnalysis
 ## 结论与限制
 
 永久注册表在独占锁内重读，2026-11-11 原子预留。已记录检索范围内未发现成熟维护的直接DEA替代；不是绝对唯一性保证，不是组委会裁决。搜索索引、语言识别、网页缓存与未索引私有/新项目均存在限制；如发现不确定直接替代，先核对并停止受影响实施。
+
+## 发布前反向复核
+
+2026-11-11 实施后再次执行扩大限额的 DEA、frontier、efficiency、envelopment MoonCakes 检索；GitHub code 对 envelopment、Malmquist、radial_efficiency、data envelopment、peer_weights 再查。精确查询返回0、incomplete_results=false；未发现新增直接替代。含空格/引号的首次命令被CLI参数解析拒绝，改为URL编码查询后实际成功，不把失败当零结果。已交付三个场景及四类模型独立对照；结论仍仅适用于记录范围，非绝对唯一性或官方审核。
