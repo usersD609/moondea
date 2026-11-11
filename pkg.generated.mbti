@@ -6,6 +6,7 @@ import {
 }
 
 // Values
+pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResult, DeaError]
 
 // Errors
 
@@ -30,6 +31,19 @@ pub(all) enum DeaError {
   Numerical(String)
 } derive(@debug.Debug)
 pub fn DeaError::to_repr(Self) -> @debug.Repr
+
+pub struct RadialResult {
+  unit : String
+  factor : Double
+  weights : Array[Double]
+  reference_names : Array[String]
+  projected_inputs : Array[Double]
+  projected_outputs : Array[Double]
+  input_slacks : Array[Double]
+  output_slacks : Array[Double]
+  residual : Double
+  iterations : Int32
+}
 
 // Type aliases
 
