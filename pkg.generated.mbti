@@ -10,6 +10,8 @@ pub fn additive(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[Add
 
 pub fn directional(Dataset, Int32, Dataset, Returns, Array[Double], Array[Double], budget? : Int32) -> Result[DirectionalResult, DeaError]
 
+pub fn evaluate(Dataset, Dataset, Returns, output? : Bool, refine? : Bool, budget? : Int32) -> Array[Result[RadialResult, DeaError]]
+
 pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResult, DeaError]
 
 pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
@@ -19,6 +21,8 @@ pub fn output_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Resul
 pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
 
 pub fn strongly_efficient(Dataset, Int32, RadialResult, tolerance? : Double) -> Result[Bool, DeaError]
+
+pub fn super_efficiency(Dataset, Int32, Returns, output? : Bool, budget? : Int32) -> Result[RadialResult, DeaError]
 
 // Errors
 
