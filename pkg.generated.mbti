@@ -26,6 +26,8 @@ pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? 
 
 pub fn read_csv(String) -> Result[PanelTable, DeaError]
 
+pub fn read_json(String) -> Result[PanelTable, DeaError]
+
 pub fn rolling_windows(Array[Dataset], Int32, Returns, output? : Bool, budget? : Int32) -> Result[Array[WindowResult], DeaError]
 
 pub fn scale_efficiency(Dataset, Int32, budget? : Int32) -> Result[ScaleResult, DeaError]
@@ -89,6 +91,7 @@ pub fn PanelTable::input_names(Self) -> Array[String]
 pub fn PanelTable::new(Dataset, Array[String], Array[String]) -> Result[Self, DeaError]
 pub fn PanelTable::output_names(Self) -> Array[String]
 pub fn PanelTable::to_csv(Self) -> String
+pub fn PanelTable::to_json(Self) -> Json
 
 pub struct ProductivityResult {
   unit : String
