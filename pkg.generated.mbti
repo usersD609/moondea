@@ -1,0 +1,36 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "usersD609/moondea"
+
+import {
+  "moonbitlang/core/debug",
+}
+
+// Values
+
+// Errors
+
+// Types and methods
+pub struct Dataset {
+  // private fields
+}
+pub fn Dataset::input_count(Self) -> Int32
+pub fn Dataset::inputs(Self) -> Array[Array[Double]]
+pub fn Dataset::names(Self) -> Array[String]
+pub fn Dataset::new(Array[String], Array[Array[Double]], Array[Array[Double]]) -> Result[Self, DeaError]
+pub fn Dataset::output_count(Self) -> Int32
+pub fn Dataset::outputs(Self) -> Array[Array[Double]]
+pub fn Dataset::select(Self, Array[Int32]) -> Result[Self, DeaError]
+pub fn Dataset::size(Self) -> Int32
+
+pub(all) enum DeaError {
+  Invalid(String)
+  Infeasible
+  Unbounded
+  IterationLimit
+  Numerical(String)
+} derive(@debug.Debug)
+pub fn DeaError::to_repr(Self) -> @debug.Repr
+
+// Type aliases
+
+// Traits
