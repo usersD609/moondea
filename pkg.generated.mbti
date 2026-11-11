@@ -14,6 +14,8 @@ pub fn directional(Dataset, Int32, Dataset, Returns, Array[Double], Array[Double
 
 pub fn evaluate(Dataset, Dataset, Returns, output? : Bool, refine? : Bool, budget? : Int32) -> Array[Result[RadialResult, DeaError]]
 
+pub fn execute_request(String) -> Result[Json, DeaError]
+
 pub fn input_crs(Dataset, Int32, Dataset, budget? : Int32) -> Result[RadialResult, DeaError]
 
 pub fn input_radial(Dataset, Int32, Dataset, Returns, budget? : Int32) -> Result[RadialResult, DeaError]
@@ -29,6 +31,8 @@ pub fn radial_refined(Dataset, Int32, Dataset, Returns, output? : Bool, budget? 
 pub fn read_csv(String) -> Result[PanelTable, DeaError]
 
 pub fn read_json(String) -> Result[PanelTable, DeaError]
+
+pub fn respond(String) -> String
 
 pub fn rolling_windows(Array[Dataset], Int32, Returns, output? : Bool, budget? : Int32) -> Result[Array[WindowResult], DeaError]
 
@@ -83,6 +87,7 @@ pub struct DirectionalResult {
   residual : Double
   iterations : Int32
 }
+pub fn DirectionalResult::to_json(Self) -> Json
 
 pub struct InfluenceResult {
   excluded : String
@@ -109,6 +114,7 @@ pub struct ProductivityResult {
   technology_change : Double
   productivity : Double
 }
+pub fn ProductivityResult::to_json(Self) -> Json
 
 pub struct RadialResult {
   unit : String
