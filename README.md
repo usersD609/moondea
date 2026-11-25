@@ -2,7 +2,7 @@
 
 MoonDEA 将可比较单位的投入、产出矩阵转为径向效率、参考同伴和改进目标，并支持跨期生产率与参考集敏感性分析。面向分支运营分析人员、嵌入效率分析的数据平台作者、跨期研究者。核心计算、格式校验和报告均由 MoonBit 实现，无 Python、网络服务或本机求解器运行时依赖。
 
-模块：`usersD609/moondea@0.1.0`。MIT 许可证。结果是相对于选定参考集的描述性效率，不能解释为因果关系或统计显著性。
+模块：`usersD609/moondea@0.1.1`。MIT 许可证。结果是相对于选定参考集的描述性效率，不能解释为因果关系或统计显著性。
 
 ## 已实现功能
 
@@ -18,14 +18,14 @@ MoonDEA 将可比较单位的投入、产出矩阵转为径向效率、参考同
 
 ## 环境与安装
 
-开发和 CI 固定官方 `moonc v0.10.18+6c83a7f62`、`moon 0.1.20261028`，满足 `moonc >=0.10.16`。使用官方 MoonBit 工具链并以 `moon version --all` 核对。支持 wasm-gc、wasm、js、native。JS 需要 Node.js；native 需要平台 C 工具链，Windows 需要 MSVC C++ 工具和 Windows SDK。
+开发和 CI 固定官方 `moonc v0.10.22+124d61d05`、`moon 0.1.20261119`，满足 `moonc >=0.10.16`。使用官方 MoonBit 工具链并以 `moon version --all` 核对。支持 wasm-gc、wasm、js、native。JS 需要 Node.js；native 需要平台 C 工具链，Windows 需要 MSVC C++ 工具和 Windows SDK。
 
 在新消费项目添加精确版本：
 
 ```sh
 moon new dea-consumer
 cd dea-consumer
-moon add usersD609/moondea@0.1.0
+moon add usersD609/moondea@0.1.1
 ```
 
 消费主包的 `moon.pkg`：

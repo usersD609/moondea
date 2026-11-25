@@ -128,12 +128,13 @@ fn projection(
 }
 
 ///|
+#derive(Debug)
 pub(all) enum Returns {
   CRS
   VRS
   NIRS
   NDRS
-} derive(Debug)
+}
 
 ///|
 pub extend Returns with @debug.Debug::{to_repr}

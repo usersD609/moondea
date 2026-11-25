@@ -1,11 +1,12 @@
 ///|
+#derive(Debug)
 pub(all) enum DeaError {
   Invalid(String)
   Infeasible
   Unbounded
   IterationLimit
   Numerical(String)
-} derive(Debug)
+}
 
 ///|
 pub struct Dataset {
