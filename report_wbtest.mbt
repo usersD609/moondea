@@ -19,3 +19,40 @@ test "reports rank successful rows and keep failure statistics nullable" {
   assert_true(@json.valid(report.stringify()[:]))
   assert_eq(DeaError::IterationLimit.code(), "iteration_limit")
 }
+
+///|
+test "report statistics serialize as numeric scalars or null through public request" {
+  let table = read_csv("unit,input:x,output:y\nA,1,1\nB,2,1\n").unwrap()
+  let request = Json::object({
+    "schema": Json::number(1.0),
+    "operation": Json::string("benchmark"),
+    "data": table.to_json(),
+  })
+  let check = fn(j : Json, failed : Bool) raise {
+    match j {
+      Object(o) =>
+        match o["summary"] {
+          Object(s) => {
+            for name in ["mean", "minimum", "maximum"] {
+              if failed {
+                assert_true(s[name] is Null)
+              } else {
+                assert_true(s[name] is Number(_))
+              }
+            }
+            if !failed {
+              match s["mean"] {
+                Number(v, ..) => near(v, 0.75)
+                _ => fail("mean must be scalar")
+              }
+            }
+          }
+          _ => fail("summary must be object")
+        }
+      _ => fail("report must be object")
+    }
+  }
+  check(execute_request(request.stringify()).unwrap(), false)
+  let failed = benchmark_report(table.dataset(), table.dataset(), CRS, budget=0).unwrap()
+  check(failed, true)
+}

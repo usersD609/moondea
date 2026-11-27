@@ -129,12 +129,18 @@ pub fn ScoreSummary::to_json(self : ScoreSummary) -> Json {
       "factor": Json::number(r.factor),
     })
   })
+  let statistic = fn(value : Double?) {
+    match value {
+      Some(v) => Json::number(v)
+      None => Json::null()
+    }
+  }
   Json::object({
     "rows": Json::array(rows),
     "failures": Json(self.failures),
-    "mean": Json(self.mean),
-    "minimum": Json(self.minimum),
-    "maximum": Json(self.maximum),
+    "mean": statistic(self.mean),
+    "minimum": statistic(self.minimum),
+    "maximum": statistic(self.maximum),
   })
 }
 

@@ -2,7 +2,7 @@
 
 MoonDEA 将可比较单位的投入、产出矩阵转为径向效率、参考同伴和改进目标，并支持跨期生产率与参考集敏感性分析。面向分支运营分析人员、嵌入效率分析的数据平台作者、跨期研究者。核心计算、格式校验和报告均由 MoonBit 实现，无 Python、网络服务或本机求解器运行时依赖。
 
-模块：`usersD609/moondea@0.1.1`。MIT 许可证。结果是相对于选定参考集的描述性效率，不能解释为因果关系或统计显著性。
+模块：`usersD609/moondea@0.1.2`。MIT 许可证。结果是相对于选定参考集的描述性效率，不能解释为因果关系或统计显著性。
 
 ## 已实现功能
 
@@ -25,7 +25,7 @@ MoonDEA 将可比较单位的投入、产出矩阵转为径向效率、参考同
 ```sh
 moon new dea-consumer
 cd dea-consumer
-moon add usersD609/moondea@0.1.1
+moon add usersD609/moondea@0.1.2
 ```
 
 消费主包的 `moon.pkg`：
@@ -75,7 +75,7 @@ Dataset::new 深复制数据；getter 返回副本。允许 1..128 观测、各 
 
 投入模型最小化 theta：`Xλ <= theta*x0, Yλ >= y0`。产出模型最大化 phi：`Xλ <= x0, Yλ >= phi*y0`。λ 非负；VRS 加 sum λ=1，NIRS 加 sum λ<=1，NDRS 加 sum λ>=1。投入分数 theta，产出分数 1/phi；同参考集通常在 (0,1]，跨参考/超效率不适用此范围。
 
-RadialResult.factor 始终为原始 theta 或 phi。同伴投影 Xλ、Yλ 保持原单位；松弛相对于径向目标。radial_refined 最大化归一化松弛总和；strongly_efficient 应用于精化结果。同伴分解和多重最优目标不唯一，不承诺与其他求解器逐权重一致。
+RadialResult.factor 始终为原始 theta 或 phi。同伴投影 Xλ、Yλ 保持原单位；松弛相对于径向目标。radial_refined 最大化归一化松弛总和；strongly_efficient 应用于精化结果，拒绝非有限的 factor 或松弛值（公开结果数组可被调用方修改）。同伴分解和多重最优目标不唯一，不承诺与其他求解器逐权重一致。
 
 |任务|主要 API|
 |---|---|
@@ -87,7 +87,7 @@ RadialResult.factor 始终为原始 theta 或 phi。同伴投影 Xλ、Yλ 保�
 
 规模分解为 theta_CRS = scale_efficiency * theta_VRS。Malmquist 用 CRS 投入因子，theta_ab 表示 a 期观测对 b 期技术：`M=sqrt((theta10/theta00)*(theta11/theta01))`，大于 1 为该约定下进步；`EC=theta11/theta00`，`TC=sqrt((theta10/theta11)*(theta00/theta01))`，M=EC*TC。两期必须同名同规模，可换行顺序。
 
-sensitivity 的范围包括基线及成功剔除项，失败另列；不是置信区间。rolling_windows 使用包含当期的尾随窗口；不是动态技术模型。超效率及异参考模型可能不可行。
+sensitivity 的范围包括基线及成功剔除项，失败另列；不是置信区间。rolling_windows 使用包含当期的尾随窗口；不是动态技术模型。池化参考名使用 `p{period}:r{row}:原名`；若总长度超过128 UTF-16单元，仅保留唯一的 `p{period}:r{row}:` 标识，不截断Unicode，原数据及评估结果单位名保持不变。超效率及异参考模型可能不可行。
 
 ## CSV 和 JSON 接口
 
@@ -123,7 +123,7 @@ execute_request / respond 接收以下请求；data 为完整快照，不能是�
 
 默认 CRS、input、refine=true、reference=data。每种操作拒绝不能履行的字段。JSON 限长262144 code units、深度8，拒绝重复键、未知键和未来 schema。unit 从0起，budget 为0..50000整数，默认10000。径向精化两阶段共享预算；批量/跨期/敏感性按每次模型求解适用预算。
 
-错误码为 invalid、infeasible、unbounded、iteration_limit、numerical。respond 将错误转 JSON。benchmark 的顶层成功仍可能含失败行，须检查 summary.failures 和每行 status；全部失败时 mean/minimum/maximum 为 null。失败不参与排名，成功按分数降序竞争排名，同分容差 `1e-7*(1+abs(anchor))`，同分保持评估顺序。
+错误码为 invalid、infeasible、unbounded、iteration_limit、numerical。respond 将错误转 JSON。benchmark 的顶层成功仍可能含失败行，须检查 summary.failures 和每行 status；成功统计的 mean/minimum/maximum 为 JSON 数值（不是数组）；全部失败时为 null。失败不参与排名，成功按分数降序竞争排名，同分容差 `1e-7*(1+abs(anchor))`，同分保持评估顺序。
 
 ## 验证与数值边界
 
@@ -137,7 +137,7 @@ moon build --deny-warn
 python tools/audit_source.py
 ```
 
-对 wasm-gc、wasm、js、native 分别追加 `--target <target>`。CI 在四后端运行检查、测试、构建、三个场景、接口及格式验证。目前 **58项测试**，其中32个固定种子独立合成面板、**512个 SciPy/HiGHS 最优值**，比较四种规模技术下的投入、产出、加性和方向模型，容差 `1e-6*(1+abs(expected))`，不比较非唯一权重。
+对 wasm-gc、wasm、js、native 分别追加 `--target <target>`。CI 在四后端运行检查、测试、构建、三个场景、接口及格式验证。目前 **61项测试**，其中32个固定种子独立合成面板、**512个 SciPy/HiGHS 最优值**，比较四种规模技术下的投入、产出、加性和方向模型，容差 `1e-6*(1+abs(expected))`，不比较非唯一权重。
 
 独立重算：Python3.9+，`python -m pip install scipy==1.14.1` 后 `python tools/generate_oracles.py`，再 moon fmt 和 moon test。本地最初生成使用 SciPy1.9.1；CI以1.14.1重算并按1e-7相对/绝对容差比较保存值。Python/SciPy 不是运行时依赖。另有解析算例、尺度/置换不变量、最大维度、冗余约束、预算及格式错误回归。
 
@@ -148,3 +148,10 @@ python tools/audit_source.py
 ## 许可、参考与 AI
 
 [LICENSE](LICENSE) 为 MIT；[NOTICE.md](NOTICE.md) 说明来源；[AI-USE.md](AI-USE.md) 披露 AI 使用。参考 DataEnvelopmentAnalysis.jl（MIT）的数学功能语义，未复制代码、文档或数据，不是全量移植。运行时仅依赖 MoonBit core 标准库。AI 辅助设计、实现、测试和文档；自验不等于赛事组正式验收。
+
+## 0.1.2 修复记录
+
+- 报告成功统计值显式输出 JSON 数值，全部失败仍输出 null，不再泄漏 Option 的数组表示。
+- 窗口池化兼容文档允许的最长 Unicode 单位名称，使用有界且唯一的参考标识。
+- 强有效性诊断拒绝非有限 factor/松弛值，避免可变结果数组被修改后 NaN 误判。
+- 无公共接口签名变化；兼容基线仍固定 `moonc 0.10.22+124d61d05`，不因 MoonCakes 后台版本未公开而更换工具链。

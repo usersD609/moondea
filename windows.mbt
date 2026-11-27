@@ -21,7 +21,16 @@ pub fn pool_periods(
       return Err(Invalid("pooled reference exceeds 128 rows"))
     }
     for i in 0..<periods[t].size() {
-      names.push("p\{t}:r\{i}:" + periods[t].labels[i])
+      let prefix = "p\{t}:r\{i}:"
+      let label = periods[t].labels[i]
+      // The prefix alone uniquely identifies the source row. Do not truncate UTF-16.
+      names.push(
+        if prefix.length() + label.length() <= 128 {
+          prefix + label
+        } else {
+          prefix
+        },
+      )
       x.push(periods[t].xs[i].copy())
       y.push(periods[t].ys[i].copy())
     }

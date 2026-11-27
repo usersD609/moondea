@@ -78,6 +78,13 @@ pub fn strongly_efficient(
     result.output_slacks.length() != data.output_count() {
     return Err(Invalid("result does not match unit dimensions"))
   }
+  // Public result arrays are mutable; NaN comparisons must not certify efficiency.
+  if !finite(result.factor) ||
+    result.factor <= 0.0 ||
+    result.input_slacks.any(fn(v) { !finite(v) }) ||
+    result.output_slacks.any(fn(v) { !finite(v) }) {
+    return Err(Invalid("diagnostic requires finite factor and slacks"))
+  }
   if (result.factor - 1.0).abs() > tolerance {
     return Ok(false)
   }
